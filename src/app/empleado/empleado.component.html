@@ -1,0 +1,21 @@
+{{funinput()}}
+Introduce tu nombre: <input type="text" class="prueba" #nombre (keyup.Enter)="0">
+<br/>
+<span>
+Introduce tu Número: <input type="number" class="prueba" #jugador (keyup.enter)="updatePlayer(jugador.value)" [disabled]="numinput"/>
+</span>
+<br/>
+<p>{{usertext}}</p>
+<br/>
+Registro: <input type="radio" value="si" name="uregs" [checked]="userregister" (click)="funregis($event)"/><br/>
+S/ registro: <input type="radio" value="no" name="uregs" (click)="funregis($event)"/>
+<br/>
+<br/>
+<p>Nombre: {{nombre.value}}</p>
+<p >Apellido: {{apellido}}</p>
+<p>edad: {{edad}}</p>
+<p>Puntos de jugador: {{player}}</p>
+<p>Eres un {{player > 3000 ? 'pro' : 'noob'}}!</p>
+
+
+
