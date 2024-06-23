@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './informaticos.component.css'
 })
 export class InformaticosComponent {
-informaticos = "Empezamos con Angular y GIT!!";
+informaticos = "Empezamos con Angular y GIT!! editado por usuario 3";
 }
